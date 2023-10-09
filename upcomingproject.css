@@ -1,0 +1,194 @@
+/* Reset some default styles */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: rgb(0, 132, 255);
+}
+
+/* Styles for the scrolling background (if needed) */
+
+/* Styles for the scrolling background */
+.background-scroll {
+    background-image: url('background-house.jpeg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed; /* Keep the background fixed */
+    background-position: center center; /* Center the background */
+    position: fixed; /* Fix the background to the viewport */
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+    opacity: 0.5;
+}
+
+/* Container styles */
+.container {
+    position: relative; /* Create a stacking context for child elements */
+}
+
+/* Header styles */
+
+/* Header styles */
+header {
+    background-color: #333;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px; /* Increased padding for a larger header */
+}
+
+.logo img {
+    width: 50px; /* Increased logo size */
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+nav ul li {
+    margin-right: 25px; /* Increased spacing between navigation items */
+}
+
+nav ul li:last-child {
+    margin-right: 0;
+}
+
+nav a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    font-size: 18px; /* Increased font size */
+    transition: color 0.3s;
+}
+
+nav a:hover {
+    color: #ff6600;
+}
+
+/* Main content styles */
+.upcoming-projects {
+    /* Add background color or other styles for the main content here */
+    padding: 20px; /* Adjust spacing as needed */
+}
+
+/* Styles for each project section */
+.project {
+    margin-bottom: 40px; /* Add space between project sections */
+}
+
+.project h2 {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+/* Styles for project images and hover effects */
+.project-images {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between; /* Distribute images evenly */
+}
+
+.project-image {
+    width: 48%; /* Set the width for each image (2 images per row) */
+    position: relative;
+    overflow: hidden;
+}
+
+.project-image img {
+    width: 300px; /* Set the maximum width for the images */
+    height: auto; /* Allow the height to adjust automatically */
+    transition: filter 0.3s;
+    border-radius: 10px;
+}
+
+
+.project-image .image-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.7);
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: opacity 0.3s;
+    border-radius: 10px;
+}
+
+.project-image:hover img {
+    filter: grayscale(100%);
+}
+
+.project-image:hover .image-overlay {
+    opacity: 1;
+}
+
+/* Styles for project descriptions */
+.project-description {
+    line-height: 1.0;
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+}
+
+/* Footer styles */
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 0;
+    text-align: center;
+}
+
+footer .container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+footer p {
+    margin: 0;
+}
+div.transbox {
+    margin: 30px;
+    background-color: rgb(255, 255, 255);
+    border: 1px solid black;
+    opacity: 1.0;
+    border-radius: 10px 10px 10px 10px;
+    color: black;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+.transbox a {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #ff6600;
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+}
+
+.transbox a:hover {
+    background-color: #333;
+}
+
+div.start {
+    margin: 30px;
+    background-color: rgb(255, 255, 255);
+    border: 1px solid black;
+    opacity: 0.7;
+    border-radius: 10px 10px 10px 10px;
+    color: black;
+}

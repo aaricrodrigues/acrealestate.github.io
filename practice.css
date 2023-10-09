@@ -1,0 +1,162 @@
+/* Reset some default styles */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif; 
+}
+
+/* Header styles */
+header {
+    background-color: #333;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px; /* Increased padding for a larger header */
+}
+
+.logo img {
+    width: 50px; /* Increased logo size */
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+nav ul li {
+    margin-right: 25px; /* Increased spacing between navigation items */
+}
+
+nav ul li:last-child {
+    margin-right: 0;
+}
+
+nav a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    font-size: 18px; /* Increased font size */
+    transition: color 0.3s;
+}
+
+nav a:hover {
+    color: #ff6600;
+}
+
+
+/* Styles for the property section */
+.property-section { /* Background color for the section */
+    padding: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.property-image {
+    flex: 1;
+    padding: 20px;
+    background-size: cover;
+}
+
+.property-text {
+    flex: 1;
+    padding: 20px;
+    text-align: center;
+}
+
+.property-text h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.property-text p {
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+.property-text a {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #ff6600;
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.property-text a:hover {
+    background-color: #333;
+}
+
+
+/* Styles for the features section */
+.features-section {
+    padding: 40px 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: flex-start;
+}
+
+.feature {
+    flex-basis: calc(33.33% - 20px); /* Adjust the width of each block */
+    text-align: center;
+    padding: 20px;
+    margin: 10px;
+    background-color: #00ffb3; /* Background color for each block */
+    border-radius: 10px; /* Rounded edges */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Slight shadow */
+    transition: background-color 0.3s ease-in-out; /* Smooth background color transition on hover */
+}
+
+.feature:hover {
+    background-color: #88ff00; /* Change to a blueish color on hover */
+}
+
+.feature img {
+    width: 60px; /* Adjust the size of the icon */
+    margin-bottom: 10px;
+    border: black;
+    border-radius: 25px;
+}
+
+.feature h3 {
+    font-size: 18px;
+    color: #333;
+}
+
+.feature p {
+    font-size: 14px;
+    color: #666;
+    line-height: 1.5;
+}
+
+
+/* Styles for the scrolling background */
+.background-scroll {
+    background-image: url('background-house.jpeg'); /* Replace with your background image */
+    background-size: cover;
+    background-repeat: repeat-y; /* Repeat vertically */
+    background-attachment: fixed; /* Fixed background */
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: -1; /* Place it behind other content */
+    opacity: 0.5; /* Adjust opacity as needed */
+}
+
+/* Container styles */
+.container {
+    position: relative; /* Create a stacking context for child elements */
+}
+
+/* The rest of your existing CSS styles can remain unchanged */
+
+

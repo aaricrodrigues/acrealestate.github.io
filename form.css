@@ -1,0 +1,136 @@
+/* Reset some default styles */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif; 
+}
+
+/* Styles for the scrolling background */
+/* Styles for the scrolling background */
+.background-scroll {
+    background-image: url('background-house.jpeg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed; /* Keep the background fixed */
+    background-position: center center; /* Center the background */
+    position: fixed; /* Fix the background to the viewport */
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+    opacity: 0.5;
+}
+
+/* Container styles */
+.container {
+    position: relative; /* Create a stacking context for child elements */
+}
+
+
+/* Header styles */
+header {
+    background-color: #333;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px; /* Increased padding for a larger header */
+}
+
+.logo img {
+    width: 50px; /* Increased logo size */
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+nav ul li {
+    margin-right: 25px; /* Increased spacing between navigation items */
+}
+
+nav ul li:last-child {
+    margin-right: 0;
+}
+
+nav a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    font-size: 18px; /* Increased font size */
+    transition: color 0.3s;
+}
+
+nav a:hover {
+    color: #ff6600;
+}
+
+/* Add this CSS to your existing lp.css file or create a new CSS file */
+
+/* Styles for the Contact Us section */
+
+/* Styles for the contact form */
+/* Apply the same style to text, email, and tel input types */
+input[type="text"], input[type="email"], input[type="tel"], select, textarea {
+    width: 100%; /* Full width */
+    padding: 12px; /* Some padding */
+    border: 1px solid #ccc; /* Gray border */
+    border-radius: 4px; /* Rounded borders */
+    box-sizing: border-box; /* Make sure that padding and width stays in place */
+    margin-top: 6px; /* Add a top margin */
+    margin-bottom: 16px; /* Bottom margin */
+    resize: vertical; 
+    font-weight: bold;/* Allow the user to vertically resize the textarea (not horizontally) */
+  }
+  
+  /* Style the submit button with a specific background color etc */
+  input[type="submit"] {
+    background-color: #04AA6D;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  /* When moving the mouse over the submit button, add a darker green color */
+  input[type="submit"]:hover {
+    background-color: #45a049;
+  }
+  
+  /* Add a background color and some padding around the form */
+  .container {
+    opacity: 1.0;
+    border-radius: 5px;
+    padding: 20px;
+  }
+  
+/* Footer styles */
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 0;
+    text-align: center;
+}
+
+footer .container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+footer p {
+    margin: 0;
+}
+
+div.transbox {
+    margin: 30px;
+    background-color: white;
+    border: 1px solid black;
+    opacity: 0.9;
+    border-radius: 10px 10px 10px 10px;
+    color: black;
+}
